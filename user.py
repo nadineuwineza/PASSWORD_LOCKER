@@ -104,5 +104,27 @@ class Users:
         method that generate a random password
         """
         password = string.ascii_lowercase + string.ascii_uppercase + "~!@#$%;:^&*"
-        return ''.join(random.choice(password) for i in range(int(stringLength)))     
+        return ''.join(random.choice(password) for i in range(int(stringLength)))  
+
+
+
+class Main:
+
+    user1 = Users("user", "1234")
+    users.append(user1)
+    def create_account():
+        print("Kindly input your preferred username and password to proceed")
+        user1 = Users(input("Username: "), input("Password: "))
+        users.append(user1)
+        print("Your account has been created successfully.")
+        print("select 1 to login and 2 to exit")
+        option = input()
+        if option == "1":
+            Users.login()
+        else:
+            Main.create_account ()  
+
+    """
+    Created a create account method that calls the login functiong
+    """
                 
