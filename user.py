@@ -127,4 +127,19 @@ class Main:
     """
     Created a create account method that calls the login functiong
     """
-                
+
+    def main():
+
+        print("Hello, welcome to Password Locker. To proceed choose one of the three options:")
+        print("\n1. Login \n2. Register new account \n3. Exit")
+        user_option = input()
+
+        if user_option == "1":
+            Users.login()
+        elif user_option == "2":
+            Main.create_account()
+        elif user_option == "3":
+            exit()
+        else:
+            print("Invalid option")
+                    
