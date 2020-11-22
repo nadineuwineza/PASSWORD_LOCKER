@@ -60,4 +60,16 @@ class Users:
         """
         Created class users and initialized using the self keyword
         """
+
+    def login():
+        print("Put your credentials to login")
+        username = input("Username: ")
+        password = input("Password: ")
+
+        for x in users:
+            if x.username == username and x.password == password:
+                print("Login successful")
+                Credentials.my_credentials()
+            else:
+                pass    
                 
