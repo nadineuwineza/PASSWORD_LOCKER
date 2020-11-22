@@ -33,9 +33,19 @@ class Credentials:
             elif option == "2":
                 account1 = Credentials(account_name = input("Account Name (e.g. Twitter): "), username = input("Username: "), password = input("Password: "))
                 credentials.append(account1)
-                # for x in credentials:
-                #     print("Account: " + x.account_name,"Username: " + x.username,"Password: " + x.password)
+               
                 Users.view_credentials()
                 Users.delete()
             else:
-                print("Invalid input
+                print("Invalid input")
+                Credentials.my_credentials()
+
+        elif credentials_option == "2":
+            account1 = Credentials(account_name = input("Account Name (e.g. Twitter): "), username = input("Username: "), password = input("Password: "))
+            credentials.append(account1)
+            Users.view_credentials()
+            Users.delete()                  
+            
+        elif credentials_option == "3":
+            Users.view_credentials()
+                
