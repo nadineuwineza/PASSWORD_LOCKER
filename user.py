@@ -29,3 +29,13 @@ class Credentials:
             if option == "1":
                 pwd =Users.random_password(10)
                 acc
+        
+            elif option == "2":
+                account1 = Credentials(account_name = input("Account Name (e.g. Twitter): "), username = input("Username: "), password = input("Password: "))
+                credentials.append(account1)
+                # for x in credentials:
+                #     print("Account: " + x.account_name,"Username: " + x.username,"Password: " + x.password)
+                Users.view_credentials()
+                Users.delete()
+            else:
+                print("Invalid input
