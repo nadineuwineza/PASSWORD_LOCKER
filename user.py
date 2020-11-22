@@ -85,4 +85,17 @@ class Users:
             Users.login()
         else:
             print("invalid choice")
+
+    def delete():
+        print("Do you want to delete credentials?")
+        print("\n1. Yes \n2. No")
+        delete_option = input()
+        if delete_option == "1":
+            credentials.clear()
+            print("You have deleted credentials from the list")
+        elif delete_option == "2":
+            print("your details are still stored in the application")
+        else:
+            print("Invalid input.")
+            delete()        
                 
