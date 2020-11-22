@@ -97,5 +97,12 @@ class Users:
             print("your details are still stored in the application")
         else:
             print("Invalid input.")
-            delete()        
+            delete() 
+
+    def passwordGenerate(stringLength=8):
+        """
+        method that generate a random password
+        """
+        password = string.ascii_lowercase + string.ascii_uppercase + "~!@#$%;:^&*"
+        return ''.join(random.choice(password) for i in range(int(stringLength)))     
                 
