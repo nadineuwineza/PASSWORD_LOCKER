@@ -72,4 +72,17 @@ class Users:
                 Credentials.my_credentials()
             else:
                 pass    
+
+    def view_credentials():
+        print("choose one of the options below to view your credentials:")
+        print("\n1. Yes \n2. No")
+        viewers_choice = input()
+        if viewers_choice == "1":
+            for x in credentials:
+                print("Account: " + x.account_name,"Username: " + x.username,"Password: " + x.password)
+        elif viewers_choice == "2":
+            print("Thanks for checking")
+            Users.login()
+        else:
+            print("invalid choice")
                 
