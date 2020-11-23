@@ -13,5 +13,13 @@ class TestUser(unittest.TestCase):
         self.assertTrue(self.new_user.username, 'Nadine')
         self.assertTrue(self.new_user.password, 'nana')    
 
+    def test_delete(self):
+        self.assertTrue(self.new_user.username, 'Nadine')
+        self.assertTrue(self.new_user.password, 'nana') 
+
+    def test_create(self):
+        self.assertTrue(self.new_user.username, 'Nadine')
+        self.assertTrue(self.new_user.password, 'nana')  
+
 if __name__ == '__main__':
     unittest.main()        
