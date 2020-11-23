@@ -131,7 +131,7 @@ class Main:
     def main():
 
         print("Hello, welcome to Password Locker. To proceed choose one of the three options:")
-        print("\n1. Login \n2. Register new account \n3. Exit")
+        print("\n1. Login \n2. Generate new account \n3. Exit")
         user_option = input()
 
         if user_option == "1":
