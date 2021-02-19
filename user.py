@@ -88,6 +88,7 @@ class Users:
 
     def delete():
         print("Do you want to delete credentials?")
+        
         print("\n1. Yes \n2. No")
         delete_option = input()
         if delete_option == "1":
